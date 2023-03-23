@@ -10,9 +10,9 @@
 #include <limits.h>
 #include <errno.h>
 #include <stdio.h>
-#include "xbee_platform.h"
-#include "xbee_serial.h"
-#include "xbee_cbuf.h"
+#include "xbee/platform.h"
+#include "xbee/serial.h"
+#include "xbee/cbuf.h"
 
 /* Main header to link STM32 HAL Lib */
 #include "main.h"

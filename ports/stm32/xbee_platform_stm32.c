@@ -5,7 +5,7 @@
     Platform support for Freescale KL25 using mbed compiler.
 */
 
-#include "xbee_platform.h"
+#include "xbee/platform.h"
 
 /* Inlude ThreadX API Header */
 #include <tx_api.h>
