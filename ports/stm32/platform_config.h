@@ -15,6 +15,8 @@
     
     #define _f_memcpy        memcpy
     #define _f_memset        memset
+    #define PACKED_STRUCT		struct __attribute__ ((__packed__))
+    #define XBEE_PACKED(name, decl)	PACKED_STRUCT name decl
 
     // stdint.h for int8_t, uint8_t, int16_t, etc. types
     #include <stdint.h>
@@ -25,7 +27,7 @@
 
     // the "FAR" modifier is not used
     #define FAR
-    #define BYTE_ORDER      BIG_ENDIAN
+    #define BYTE_ORDER      LITTLE_ENDIAN
 
     typedef struct xbee_serial_t
     {
